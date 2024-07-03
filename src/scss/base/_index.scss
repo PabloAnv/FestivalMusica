@@ -1,3 +1,8 @@
 @forward 'normalize';
 @forward 'variables';
 @forward 'globales';
+@use 'variables' as v;
+
+.enlace_navegacion {
+    color: v.$negro;
+}
