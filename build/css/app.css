@@ -349,7 +349,6 @@ h1, h2, h3 {
 
 h1 {
   font-size: 4rem;
-  color: #FFFFFF;
 }
 
 h2 {
@@ -372,6 +371,39 @@ body > section {
   padding: 10rem 0;
 }
 
+.header {
+  background-color: #4CB8B3;
+  padding-top: 1rem;
+}
+.header h1 {
+  color: #FFFFFF;
+  margin: 2rem 0;
+  text-align: center;
+}
+
 .enlace_navegacion {
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.enlace_navegacion:hover {
+  background-color: #fdda00;
   color: #000000;
+}
+
+@media (min-width: 992px) {
+  .contenido__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .enlace_navegacion {
+    display: inline;
+  }
+  .enlace_navegacion:hover {
+    background-color: transparent;
+    color: #fdda00;
+  }
 }

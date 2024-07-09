@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+
+.header {
+    background-color: v.$verde;
+    padding-top: 1rem;
+
+    h1{
+        color: v.$blanco;
+        margin: 2rem 0;
+        text-align: center;
+    }
+}
+
+.enlace_navegacion {
+    color: v.$blanco;
+    display: block;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.enlace_navegacion:hover {
+    background-color: v.$amarillo;
+    color: v.$negro;
+}
+
+@media (min-width: 992px) {
+    .contenido__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .enlace_navegacion {
+        display: inline;
+    }
+
+    .enlace_navegacion:hover {
+        background-color: transparent;
+        color: v.$amarillo;
+    }
+}
