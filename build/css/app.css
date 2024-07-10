@@ -386,8 +386,8 @@ body > section {
   display: block;
   text-align: center;
   padding: 1.2rem;
+  font-size: 2.4rem;
 }
-
 .enlace_navegacion:hover {
   background-color: #fdda00;
   color: #000000;
