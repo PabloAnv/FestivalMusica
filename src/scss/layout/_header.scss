@@ -1,10 +1,11 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .header {
     background-color: v.$verde;
     padding-top: 1rem;
 
-    h1{
+    h1 {
         color: v.$blanco;
         margin: 2rem 0;
         text-align: center;
@@ -18,30 +19,25 @@
     padding: 1.2rem;
     font-size: 2.4rem;
 
+    @include m.telefono {
+        display: inline;
+    }
+
     &:hover {
         background-color: v.$amarillo;
         color: v.$negro;
-    }
-}
 
-@mixin contenedor{
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-@media (min-width: 992px) {
-    .contenido__header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .enlace_navegacion {
-        display: inline;
-        &:hover {
+        @include m.telefono {
             background-color: transparent;
             color: v.$amarillo;
         }
+    }
+}
+
+.contenido__header {
+    @include m.telefono {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }

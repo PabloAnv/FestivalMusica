@@ -388,9 +388,20 @@ body > section {
   padding: 1.2rem;
   font-size: 2.4rem;
 }
+@media (min-width: 992px) {
+  .enlace_navegacion {
+    display: inline;
+  }
+}
 .enlace_navegacion:hover {
   background-color: #fdda00;
   color: #000000;
+}
+@media (min-width: 992px) {
+  .enlace_navegacion:hover {
+    background-color: transparent;
+    color: #fdda00;
+  }
 }
 
 @media (min-width: 992px) {
@@ -398,12 +409,5 @@ body > section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  .enlace_navegacion {
-    display: inline;
-  }
-  .enlace_navegacion:hover {
-    background-color: transparent;
-    color: #fdda00;
   }
 }
