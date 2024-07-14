@@ -388,7 +388,7 @@ body > section {
   padding: 1.2rem;
   font-size: 2.4rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
   .enlace_navegacion {
     display: inline;
   }
@@ -397,14 +397,14 @@ body > section {
   background-color: #fdda00;
   color: #000000;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
   .enlace_navegacion:hover {
     background-color: transparent;
     color: #fdda00;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 480px) {
   .contenido__header {
     display: flex;
     align-items: center;
