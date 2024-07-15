@@ -19,15 +19,15 @@
     padding: 1.2rem;
     font-size: 2.4rem;
 
-    @include m.telefono {
+    @include m.tablet {
         display: inline;
     }
 
-    &:hover {
+    &:hover { 
         background-color: v.$amarillo;
         color: v.$negro;
 
-        @include m.telefono {
+        @include m.tablet {
             background-color: transparent;
             color: v.$amarillo;
         }
@@ -35,7 +35,7 @@
 }
 
 .contenido__header {
-    @include m.telefono {
+    @include m.tablet {
         display: flex;
         align-items: center;
         justify-content: space-around;
